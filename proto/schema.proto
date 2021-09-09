@@ -12,6 +12,7 @@ option (gogoproto.sizer_all) = true;
 option (gogoproto.unmarshaler_all) = true;
 
 message TableInfo {
+	optional string name  = 4;
 	optional int64 table_id = 1 [(gogoproto.nullable) = false];
 	repeated ColumnInfo columns = 2;
 	repeated int64 common_handles = 3;
